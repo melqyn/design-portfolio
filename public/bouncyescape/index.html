@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <script defer type="text/javascript" src="appscripts/main.js">
+        </script>
+        <title> Bouncy Escape </title>
+    </head>
+
+  <body>
+    
+    <div class="container">
+      <header class="header" id="headertext">
+        <p> Bouncy Escape </p>
+      </header>
+
+      <nav class="sidebar" id="sideDiv" id="text">
+        <h3 id="hscoretitle"> HIGHSCORE </h3>
+        <h4 id="hscore" class="scores"> 0 </h4>
+
+        <h3 id="scoretitle"> CURRENT SCORE </h3>
+        <h4 id="score" class="scores"> 0 </h4>
+
+      </nav>
+
+      <article class="content" id="centerDiv">
+
+      </article>
+
+      <!-- Ditto the previous note about <aside>. -->
+      <aside class="sidebar" id="asideDiv" id="text">
+        <!--- <input type=button id="permissionButton" value="IOS Enable Sensors"></p> --->
+        <h3>AUDIO CONTROLS</h3>
+        <br><br>
+        <input type="checkbox" id="soundBox"> <label> Mute</label><br><br><br>
+        <label> Volume </label><br><input type="range" id="soundVol" min="0" max="1" step="0.02" value="0.5"> <br>
+
+
+      </aside>
+
+
+      <footer class="footer" id="text">
+        <p> Final Project for NM2207 <br>
+        
+      </footer>
+    </div>
+  
+
+  </body>
+</html>
+

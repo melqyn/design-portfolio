@@ -1,0 +1,87 @@
+html, body {
+  height:100%;
+  width:100%;
+  background-image: url("../resources/brick-wall.png");
+  background-size: cover;
+  color: white;
+  padding: none;
+}
+
+.container {
+  font-family: Monaco, monospace;
+  height:98%;
+  width:98%;
+}
+
+.box {
+  overflow-x: scroll;
+}
+
+.labels {
+  overflow: auto;
+}
+
+.container > * {
+  background-color: black;
+  opacity: 0.7;
+}
+
+/* Now let's apply grid for wider viewports. */
+@media screen and (min-width: 40em) {
+  .container > * {
+    margin-bottom: 0;
+
+  }
+  /* Define the grid */
+  .container {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-gap: 2% 2%;
+    grid-template-rows: 20% auto 5%;
+  }
+
+  /* Place items on the grid */
+  .header {
+    padding: 0.4em;
+    grid-column: 1 / span 3;
+    letter-spacing: 10px;
+
+  }
+  .sidebar {
+    padding: 0.6em;
+    grid-row-end: span 2;
+    text-align: center;
+  }
+
+  .content {
+    grid-column: 2;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
+
+
+#headertext{
+  font-size: xx-large;
+  text-align: center;
+}
+
+#text{
+  font-size: small;
+}
+
+.scores {
+  background-color: rgba(255,255,255,0.3);
+  width: 50%;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
